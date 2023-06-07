@@ -1,0 +1,15 @@
+h1 {
+    color: #AA4139;
+    text-align: center;
+}
+.boxmodel {
+    border: 5px solid red;
+    display: inline-block;
+    padding: 20; /* Apply 20px on all sides */
+    padding: 5px 20px 5px 20px; /*Top Right Bottom Left*/
+    margin: 20px; /*same principle*/
+    margin: 0px 20px 0px 20px;
+    margin: 0px 20px; /* 0px means top and bottom, 20px means left and right */
+    width: 33px;
+    height: 55px;
+}
