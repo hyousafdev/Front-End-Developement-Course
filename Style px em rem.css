@@ -1,0 +1,22 @@
+h1 {
+    color: #AA4139;
+    text-align: center;
+}
+
+p {
+    font-size: 32px;
+}
+span {
+    font-size: 5em;
+    font-size: 3rem;
+}
+
+#d1 {
+    height: 20px;
+    border: 1rem solid rgb(216, 106, 106);
+}
+#d2 {
+    height: 1em;
+    border: 16px solid rgb(10, 80, 230);
+    margin-top: 5px;
+}
