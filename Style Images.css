@@ -1,0 +1,40 @@
+* {
+    text-align: right;
+}
+
+body {
+    background-image: url(https://images.unsplash.com/photo-1493119508027-2b584f234d6c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+}
+h1 {
+    color: #AA4139;
+    text-align: center;
+}
+
+p {
+    color: #AA4139;
+    text-align: center;
+    border: 5px solid rgb(255, 176, 170);
+    cursor: pointer;
+}
+
+/* Style Text and Font */
+p {
+    text-decoration: underline;
+    text-transform: uppercase;
+    line-height: 18px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 100%;
+    font-family:'Poiret One', cursive;
+
+}
+
+/* Style Images */
+img {
+    float: left; /* that's not a good practice */
+}
+footer {
+    text-align: center;
+    font-size: 30px;
+}
