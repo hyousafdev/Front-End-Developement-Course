@@ -1,0 +1,24 @@
+#div1 {
+    width: 500px;
+    height: 500px;
+    border: 2px solid green;
+}
+
+#div2 {
+    width: 300px;
+    height: 300px;
+    border: 2px solid red;
+
+   /* margin-top: 25px;
+    margin-right: 35px;
+    margin-bottom: 45px;
+    margin-left: 55px; */
+
+    margin: 30px 40px 50px 60px;    /* top: 30px | right: 40px | bottom: 50px | left: 60px */
+
+    margin: 50px 80px;      /* top bottom 50px | left right 80px */
+
+    margin: auto;
+
+    margin: 50px;       /* 50px from all sides */
+}
