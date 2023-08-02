@@ -1,0 +1,10 @@
+div {
+    width: 50%;
+    height: 200px;
+    border: 2px solid rgb(10, 7, 145);
+    margin: auto;
+    margin-top: 100px;
+    overflow: hidden;
+    overflow: scroll;
+   /* overflow: auto; */        /* Similar to scroll, but it adds scroll bars only when necessary */
+}
