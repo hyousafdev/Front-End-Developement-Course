@@ -1,0 +1,34 @@
+* {
+     box-sizing: border-box;     /* Applying this to all elements is safe and wise: */
+}
+
+#div1 {
+    width: 450px;
+    height: 10px;
+    border: 2px solid green;
+    padding: 40px;
+}
+
+#div2 {
+    width: 450px;
+    height: 10px;
+    border: 2px solid red;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+#div3 {
+    width: 450px;
+    height: 10px;
+    border: 2px solid green;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+#div4 {
+    width: 450px;
+    height: 10px;
+    border: 2px solid red;
+    padding: 40px;
+    box-sizing: border-box;
+}
