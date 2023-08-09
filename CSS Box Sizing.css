@@ -1,6 +1,7 @@
-* {
-     box-sizing: border-box;     /* Applying this to all elements is safe and wise: */
-}
+/* Applying this to all elements is safe and wise: */
+/* * {
+     box-sizing: border-box;
+} */
 
 #div1 {
     width: 450px;
