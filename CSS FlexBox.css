@@ -61,7 +61,7 @@ h1 {
 
 }
 
-.item-3 {
+.item-5 {
    /* flex-grow: 1; */
     flex-shrink: 2; /* pass any number */
     flex-basis: 2;
