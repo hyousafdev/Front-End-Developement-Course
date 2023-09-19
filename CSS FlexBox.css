@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    word-spacing: 1.4px;
+    font-family: sans-serif;
+    background-color: whitesmoke;
+   /* display: flex;
+    justify-content: center;
+    align-items: center; */
+   /* height: 100vh; */
+}
+/* END OF BASE STYLES */
+
+.container {
+    width: 80%;
+    height: 450px;
+    margin: 0 auto;
+    border: 3px solid darkslategrey;
+    overflow: scroll;
+}
+
+.items {
+    width: 100px;
+    height: 100px;
+    background-color: #fb7185;
+    padding: 30px;
+    font-weight: 700;
+    color: whitesmoke;
+    text-align: center;
+    border: 3px solid darkcyan;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Flex Box Properties */
+
+/**
+ * Short Note: Flex Box works on Main Axis and Cross Axis, Main Axis works horizontally like row which is by default whereas Cross Axis works vertically like column and for this we add the flex-direction: column; property to make this.
+ */
+
+.container {
+    display: flex;
+    justify-content: center;    /* center | flex-end | space-around | space-between | space-evenly */
+    align-items: center;    /*Cross Axis like vertically: flex-start which is by default | flex-end | center | baseline */
+
+    flex-wrap: wrap; /* By default this is set to nowrap  */
+    /* Note: align-content only works when we set the flex-wrap property */
+    /* when you scroll the screen you see the difference */
+
+    align-content: space-evenly; /* Cross Axis:: Properties: flex-start by default | center | flex-end | space-between | space-around | space-evenly */
+
+	gap: 1em; /* gap between each items inside the container */
+
+}
+
+.item-3 {
+   /* flex-grow: 1; */
+    flex-shrink: 2; /* pass any number */
+    flex-basis: 2;
+    /* flex: 1; */ /* shorthand for flex-grow, flex-shring flex-basis */
+    align-self: baseline;
+    order: -1; /* set to order our items like item-3 class set as first in page */
+}
