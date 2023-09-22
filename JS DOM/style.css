@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+h2 {
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: 20px;
+}
+
+hr {
+    margin: 10px 0;
+}

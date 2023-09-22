@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">  <!-- root element -->
+<head>  <!-- child element of root element -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Java Script DOM Manipulation</title>  <!-- child element of head -->
+</head>
+<body>  <!-- child element of root element -->
+    <h2>JavaScript DOM | Document Object Model</h2>
+
+    <!--ID Search-->
+    <h3 id="id_intro">Finding Element By ID Search</h3>
+    <h4 id="id_content"></h4>
+
+    <hr>
+
+    <!--Class Search-->
+    <h3>Finding Elements by Class Name.</h3>
+    <h4 class="c_intro">Hello World!</h4>
+    <h4 class="c_intro">This element by class name</h4>
+    <h4 id="class_content"></h4>
+
+    <hr>
+
+    <!--By Tag Name-->
+    <h3>Finding Elements by Tag Name.</h3>
+    <h3>Lorem ipsum dolor sit amet.</h3>
+    <h4 id="tagName_content"></h4>
+
+    <br />
+
+    <div id="tagName">
+        <h3>Hello, from Tag Name</h3>
+        <h3>Hey, from Lorem, ipsum dolor.</h3>
+    </div>
+        <h3 id="tagName_demo"></h3>
+
+        <table>
+            <tr>
+                <td>One</td>
+                <td>Two</td>
+            </tr>
+            <tr>
+                <td>Three</td>
+                <td>Four</td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <!--By CSS Selectors: querySelector | querySelectorAll-->
+        <h3 class="querySelectorAll">Finding Elements by Query Selector All</h3>
+        <h3 class="querySelectorAll">Hello World!...</h3>
+        <h3 class="querySelectorAll">Hi!...</h3>
+
+        <h3 id="querySelectorAll_content"></h3>
+
+        <br />
+        <!--Query Selector-->
+        <p>This is a p element from querySelector.</p>
+        <p>This is a p element from querySelector.</p>
+
+        <hr>
+
+        <h2>Attributes</h2>
+        <ul id="element" data='valid'>
+			<li class="list-item">First element</li>
+			<li class="list-item">Second element</li>
+			<li class="list-item">Third element</li>
+		</ul>
+
+        <hr>
+
+        <h2>Events</h2>
+        <!--First Step: Worst-->
+        <!-- <button id="clickBtn" onclick="alert('Hello World!')">Click Me</button> -->
+
+        <button id="clickBtn">Click Me</button>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
