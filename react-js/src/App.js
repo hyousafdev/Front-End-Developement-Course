@@ -17,6 +17,7 @@ import UserGreeting from './Components/ConditionalRendering';
 import NameList from './Components/ListRendering';
 import NameListsAndKeys from './Components/ListsAndKeys';
 import IndexAsKey from './Components/IndexAsKeyAntiPattern';
+import StyleSheet from './Components/StylingAndCSSBasics';
 
 class App extends Component {
    render() {
@@ -53,7 +54,12 @@ class App extends Component {
         {/* <UserGreeting /> */}
         {/* <NameList /> */}
         {/* <NameListsAndKeys /> */}
-        <IndexAsKey />
+        {/* <IndexAsKey /> */}
+
+        {/* <h1 className='error'>Error</h1> */}
+        {/* <h1 className={styles.success}>Success</h1> */}
+        {/* <StyleSheet primary={true}/> */}
+
 
       </div>
     );
