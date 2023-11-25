@@ -31,6 +31,8 @@ import RefsDemo from './Components/Refs';
 import FocusInput from './Components/RefsWithClassComponentsParent';
 import FRParentInput from './Components/ForwardingRefsParent';
 import PortalsDemo from './Components/Portals';
+import Hero from './Components/ErrorBoundry';
+import ErrorBoundary from './Components/ErrorBoundryClass';
 
 class App extends Component {
    render() {
@@ -85,8 +87,17 @@ class App extends Component {
         {/* <RefsDemo /> */}
         {/* <FocusInput /> */}
         {/* <FRParentInput /> */}
-        <PortalsDemo />
+        {/* <PortalsDemo /> */}
 
+        <ErrorBoundary>
+          <Hero heroName='Batman' />
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Hero heroName='Superman' />
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Hero heroName='Joker' />
+        </ErrorBoundary>
 
       </div>
     );
