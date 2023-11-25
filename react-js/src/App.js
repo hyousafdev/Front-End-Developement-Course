@@ -19,6 +19,7 @@ import NameListsAndKeys from './Components/ListsAndKeys';
 import IndexAsKey from './Components/IndexAsKeyAntiPattern';
 import StyleSheet from './Components/StylingAndCSSBasics';
 import InlineCSS from './Components/InlineCSS';
+import Form from './Components/BasicsFormHandling';
 
 class App extends Component {
    render() {
@@ -60,7 +61,8 @@ class App extends Component {
         {/* <h1 className='error'>Error</h1> */}
         {/* <h1 className={styles.success}>Success</h1> */}
         {/* <StyleSheet primary={true}/> */}
-        <InlineCSS />
+        {/* <InlineCSS /> */}
+        <Form />
 
 
       </div>
