@@ -33,7 +33,9 @@ class App extends Component {
         <PropsClassComponents name='Zain' professionName='Sales Man' />
         <PropsClassComponents name='Danish' professionName='Manager' /> */}
         {/* <State /> */}
-        <Counter />
+        {/* <Counter /> */}
+        {/* <DestructuringClassComponents name='Smith' heroName='Superman' /> */}
+        {/* <DestructuringPropsAndState name='David' heroName='Batman' /> */}
 
       </div>
     );
