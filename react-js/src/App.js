@@ -39,6 +39,8 @@ import RenderPropsClickCounter from './Components/RenderPropsClickCounter';
 import RenderPropsCounter from './Components/RenderPropsCounter';
 import RenderPropsHoverCounter from './Components/RenderPropsHoverCounter';
 import RenderPropsUser from './Components/RenderPropsUser';
+import ContextComponentC from './Components/ContextComponentC';
+import { UserProvider } from './Components/ContextUser';
 
 class App extends Component {
    render() {
@@ -109,7 +111,7 @@ class App extends Component {
         <HoverCounter/> */}
         {/* <RenderPropsClickCounter /> */}
 
-        <RenderPropsCounter>
+        {/* <RenderPropsCounter>
           {(count, incrementCount) => (
             <RenderPropsClickCounter count={count} incrementCount={incrementCount} />
           )}
@@ -118,8 +120,13 @@ class App extends Component {
           {(count, incrementCount) => (
             <RenderPropsHoverCounter count={count} incrementCount={incrementCount} />
           )}
-        </RenderPropsCounter>
-      <RenderPropsUser render={(isLoggedInParameter) => isLoggedInParameter ? 'Hassan' : 'Guest: not logged in' }/>
+        </RenderPropsCounter> */}
+      {/* <RenderPropsUser render={(isLoggedInParameter) => isLoggedInParameter ? 'Hassan' : 'Guest: not logged in' }/> */}
+
+      <UserProvider value='Hassan'>     {/* Step two Provide a context value */}
+          <ContextComponentC />                   {/* set by default value into UserContext component */}
+        </UserProvider>
+
 
       </div>
     );
