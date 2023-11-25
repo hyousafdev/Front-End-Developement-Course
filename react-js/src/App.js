@@ -35,6 +35,7 @@ import Hero from './Components/ErrorBoundry';
 import ErrorBoundary from './Components/ErrorBoundryClass';
 import ClickCounter from './Components/HigherOrderComponentClickCounter';
 import HoverCounter from './Components/HigherOrderComponentHoverCounter';
+import RenderPropsClickCounter from './Components/RenderPropsClickCounter';
 
 class App extends Component {
    render() {
@@ -103,6 +104,8 @@ class App extends Component {
 
         {/* <ClickCounter name='David'/>
         <HoverCounter/> */}
+
+        <RenderPropsClickCounter />
 
       </div>
     );
