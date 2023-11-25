@@ -13,6 +13,7 @@ import ClassEvent from './Components/EventHandling';
 import FunctionEvent from './Components/EventHandling';
 import EventBind from './Components/BindingEventHandlers';
 import ParentComponent from './Components/MethodsAsPropsParent';
+import UserGreeting from './Components/ConditionalRendering';
 
 class App extends Component {
    render() {
@@ -45,7 +46,8 @@ class App extends Component {
         {/* <FunctionEvent/> */}
         {/* <ClassEvent/> */}
         {/* <EventBind /> */}
-        <ParentComponent />
+        {/* <ParentComponent /> */}
+        <UserGreeting />
 
       </div>
     );
