@@ -7,6 +7,7 @@ import HelloJSX from './Components/helloJSX';
 import Props from './Components/Props';
 import PropsClassComponents from './Components/propsClassComponent';
 import State from './Components/State';
+import Counter from './Components/setState';
 
 class App extends Component {
    render() {
@@ -31,8 +32,8 @@ class App extends Component {
         {/* <PropsClassComponents name='Hassan' professionName='Programmer' />
         <PropsClassComponents name='Zain' professionName='Sales Man' />
         <PropsClassComponents name='Danish' professionName='Manager' /> */}
-
-        <State />
+        {/* <State /> */}
+        <Counter />
 
       </div>
     );
