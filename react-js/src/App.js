@@ -21,6 +21,7 @@ import StyleSheet from './Components/StylingAndCSSBasics';
 import InlineCSS from './Components/InlineCSS';
 import Form from './Components/BasicsFormHandling';
 import LifecycleA from './Components/ComponentMountingLifecycleMethodsA';
+import UpdatingLifecycleA from './Components/ComponentUpdatingLifecycleMethodsA';
 
 class App extends Component {
    render() {
@@ -64,7 +65,8 @@ class App extends Component {
         {/* <StyleSheet primary={true}/> */}
         {/* <InlineCSS /> */}
         {/* <Form /> */}
-        <LifecycleA />
+        {/* <LifecycleA /> */}
+        <UpdatingLifecycleA />
 
 
       </div>
