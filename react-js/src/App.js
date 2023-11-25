@@ -15,6 +15,7 @@ import EventBind from './Components/BindingEventHandlers';
 import ParentComponent from './Components/MethodsAsPropsParent';
 import UserGreeting from './Components/ConditionalRendering';
 import NameList from './Components/ListRendering';
+import NameListsAndKeys from './Components/ListsAndKeys';
 
 class App extends Component {
    render() {
@@ -49,7 +50,8 @@ class App extends Component {
         {/* <EventBind /> */}
         {/* <ParentComponent /> */}
         {/* <UserGreeting /> */}
-        <NameList />
+        {/* <NameList /> */}
+        <NameListsAndKeys />
 
       </div>
     );
