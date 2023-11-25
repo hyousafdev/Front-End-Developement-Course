@@ -42,6 +42,7 @@ import RenderPropsUser from './Components/RenderPropsUser';
 import ContextComponentC from './Components/ContextComponentC';
 import { UserProvider } from './Components/ContextUser';
 import GetPostList from './HTTP/GetPostList';
+import PostForm from './HTTP/PostFrom';
 
 class App extends Component {
    render() {
@@ -128,8 +129,9 @@ class App extends Component {
           {/* <ContextComponentC /> */}                   {/* set by default value into UserContext component */}
         {/* </UserProvider> */}
 
-        <GetPostList />
-
+        {/* HTTP Requests GET and POST */}
+        {/* <GetPostList /> */}
+        <PostForm />
 
       </div>
     );
