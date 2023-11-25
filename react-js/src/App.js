@@ -3,6 +3,7 @@ import './App.css';
 import React, { Component } from 'react';
 import Greet from './Components/functionalComponents';
 import ClassComponent from './Components/classComponent';
+import HelloJSX from './Components/helloJSX';
 
 class App extends Component {
    render() {
@@ -10,7 +11,8 @@ class App extends Component {
       <div className="App">
 
       {/* <Greet /> */}
-      <ClassComponent />
+      {/* <ClassComponent /> */}
+      <HelloJSX />
 
       </div>
     );
