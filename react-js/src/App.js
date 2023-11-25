@@ -20,6 +20,7 @@ import IndexAsKey from './Components/IndexAsKeyAntiPattern';
 import StyleSheet from './Components/StylingAndCSSBasics';
 import InlineCSS from './Components/InlineCSS';
 import Form from './Components/BasicsFormHandling';
+import LifecycleA from './Components/ComponentMountingLifecycleMethodsA';
 
 class App extends Component {
    render() {
@@ -62,7 +63,8 @@ class App extends Component {
         {/* <h1 className={styles.success}>Success</h1> */}
         {/* <StyleSheet primary={true}/> */}
         {/* <InlineCSS /> */}
-        <Form />
+        {/* <Form /> */}
+        <LifecycleA />
 
 
       </div>
