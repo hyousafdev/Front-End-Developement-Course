@@ -36,6 +36,9 @@ import ErrorBoundary from './Components/ErrorBoundryClass';
 import ClickCounter from './Components/HigherOrderComponentClickCounter';
 import HoverCounter from './Components/HigherOrderComponentHoverCounter';
 import RenderPropsClickCounter from './Components/RenderPropsClickCounter';
+import RenderPropsCounter from './Components/RenderPropsCounter';
+import RenderPropsHoverCounter from './Components/RenderPropsHoverCounter';
+import RenderPropsUser from './Components/RenderPropsUser';
 
 class App extends Component {
    render() {
@@ -104,8 +107,19 @@ class App extends Component {
 
         {/* <ClickCounter name='David'/>
         <HoverCounter/> */}
+        {/* <RenderPropsClickCounter /> */}
 
-        <RenderPropsClickCounter />
+        <RenderPropsCounter>
+          {(count, incrementCount) => (
+            <RenderPropsClickCounter count={count} incrementCount={incrementCount} />
+          )}
+        </RenderPropsCounter>
+        <RenderPropsCounter>
+          {(count, incrementCount) => (
+            <RenderPropsHoverCounter count={count} incrementCount={incrementCount} />
+          )}
+        </RenderPropsCounter>
+      <RenderPropsUser render={(isLoggedInParameter) => isLoggedInParameter ? 'Hassan' : 'Guest: not logged in' }/>
 
       </div>
     );
