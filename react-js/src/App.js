@@ -23,6 +23,7 @@ import Form from './Components/BasicsFormHandling';
 import LifecycleA from './Components/ComponentMountingLifecycleMethodsA';
 import UpdatingLifecycleA from './Components/ComponentUpdatingLifecycleMethodsA';
 import Fragments from './Components/Fragments';
+import Table from './Components/FragmentsTable';
 
 class App extends Component {
    render() {
@@ -68,7 +69,8 @@ class App extends Component {
         {/* <Form /> */}
         {/* <LifecycleA /> */}
         {/* <UpdatingLifecycleA /> */}
-        <Fragments />
+        {/* <Fragments /> */}
+        <Table />
 
 
       </div>
