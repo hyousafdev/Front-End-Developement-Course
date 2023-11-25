@@ -24,6 +24,8 @@ import LifecycleA from './Components/ComponentMountingLifecycleMethodsA';
 import UpdatingLifecycleA from './Components/ComponentUpdatingLifecycleMethodsA';
 import Fragments from './Components/Fragments';
 import Table from './Components/FragmentsTable';
+import PureComp from './Components/PureComponents';
+import ParentComp from './Components/PureComponentsParent';
 
 class App extends Component {
    render() {
@@ -70,7 +72,10 @@ class App extends Component {
         {/* <LifecycleA /> */}
         {/* <UpdatingLifecycleA /> */}
         {/* <Fragments /> */}
-        <Table />
+        {/* <Table /> */}
+
+        <PureComp />
+        <ParentComp />
 
 
       </div>
