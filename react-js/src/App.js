@@ -41,6 +41,7 @@ import RenderPropsHoverCounter from './Components/RenderPropsHoverCounter';
 import RenderPropsUser from './Components/RenderPropsUser';
 import ContextComponentC from './Components/ContextComponentC';
 import { UserProvider } from './Components/ContextUser';
+import GetPostList from './HTTP/GetPostList';
 
 class App extends Component {
    render() {
@@ -123,9 +124,11 @@ class App extends Component {
         </RenderPropsCounter> */}
       {/* <RenderPropsUser render={(isLoggedInParameter) => isLoggedInParameter ? 'Hassan' : 'Guest: not logged in' }/> */}
 
-      <UserProvider value='Hassan'>     {/* Step two Provide a context value */}
-          <ContextComponentC />                   {/* set by default value into UserContext component */}
-        </UserProvider>
+     {/* <UserProvider value='Hassan'> */}     {/* Step two Provide a context value */}
+          {/* <ContextComponentC /> */}                   {/* set by default value into UserContext component */}
+        {/* </UserProvider> */}
+
+        <GetPostList />
 
 
       </div>
