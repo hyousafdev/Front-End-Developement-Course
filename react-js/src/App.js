@@ -29,6 +29,7 @@ import ParentComp from './Components/PureComponentsParent';
 import MemoParentComp from './Components/MemoParent';
 import RefsDemo from './Components/Refs';
 import FocusInput from './Components/RefsWithClassComponentsParent';
+import FRParentInput from './Components/ForwardingRefsParent';
 
 class App extends Component {
    render() {
@@ -81,7 +82,8 @@ class App extends Component {
         <ParentComp /> */}
         {/* <MemoParentComp /> */}
         {/* <RefsDemo /> */}
-        <FocusInput />
+        {/* <FocusInput /> */}
+        <FRParentInput />
 
 
       </div>
