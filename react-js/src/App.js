@@ -37,6 +37,9 @@ class App extends Component {
         {/* <DestructuringClassComponents name='Smith' heroName='Superman' /> */}
         {/* <DestructuringPropsAndState name='David' heroName='Batman' /> */}
 
+        {/* <FunctionEvent/> */}
+        {/* <ClassEvent/> */}
+
       </div>
     );
   }
