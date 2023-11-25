@@ -8,6 +8,10 @@ import Props from './Components/Props';
 import PropsClassComponents from './Components/propsClassComponent';
 import State from './Components/State';
 import Counter from './Components/setState';
+import DestructuringClassComponents from './Components/DestructuringPropsandState';
+import ClassEvent from './Components/EventHandling';
+import FunctionEvent from './Components/EventHandling';
+import EventBind from './Components/BindingEventHandlers';
 
 class App extends Component {
    render() {
@@ -39,6 +43,8 @@ class App extends Component {
 
         {/* <FunctionEvent/> */}
         {/* <ClassEvent/> */}
+
+        <EventBind />
 
       </div>
     );
