@@ -16,6 +16,7 @@ import ParentComponent from './Components/MethodsAsPropsParent';
 import UserGreeting from './Components/ConditionalRendering';
 import NameList from './Components/ListRendering';
 import NameListsAndKeys from './Components/ListsAndKeys';
+import IndexAsKey from './Components/IndexAsKeyAntiPattern';
 
 class App extends Component {
    render() {
@@ -51,7 +52,8 @@ class App extends Component {
         {/* <ParentComponent /> */}
         {/* <UserGreeting /> */}
         {/* <NameList /> */}
-        <NameListsAndKeys />
+        {/* <NameListsAndKeys /> */}
+        <IndexAsKey />
 
       </div>
     );
