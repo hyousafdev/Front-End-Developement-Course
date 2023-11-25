@@ -5,6 +5,7 @@ import Greet from './Components/functionalComponents';
 import ClassComponent from './Components/classComponent';
 import HelloJSX from './Components/helloJSX';
 import Props from './Components/Props';
+import PropsClassComponents from './Components/propsClassComponent';
 
 class App extends Component {
    render() {
@@ -14,7 +15,8 @@ class App extends Component {
       {/* <Greet /> */}
       {/* <ClassComponent /> */}
       {/* <HelloJSX /> */}
-      <Props name='Smith' heroName='Batman'>
+
+      {/* <Props name='Smith' heroName='Batman'>
         <p>This is the children props</p>
         </Props>
         <Props name='Sara' heroName='Wonder woman'>
@@ -22,7 +24,12 @@ class App extends Component {
         </Props>
         <Props name='David' heroName='Superman'>
         <p>This is the another children props</p>
-        </Props>
+        </Props> */}
+
+        {/* Using props through Class Components */}
+        <PropsClassComponents name='Hassan' professionName='Programmer' />
+        <PropsClassComponents name='Zain' professionName='Sales Man' />
+        <PropsClassComponents name='Danish' professionName='Manager' />
 
       </div>
     );
