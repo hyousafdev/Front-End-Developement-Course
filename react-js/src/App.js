@@ -26,6 +26,7 @@ import Fragments from './Components/Fragments';
 import Table from './Components/FragmentsTable';
 import PureComp from './Components/PureComponents';
 import ParentComp from './Components/PureComponentsParent';
+import MemoParentComp from './Components/MemoParent';
 
 class App extends Component {
    render() {
@@ -74,8 +75,9 @@ class App extends Component {
         {/* <Fragments /> */}
         {/* <Table /> */}
 
-        <PureComp />
-        <ParentComp />
+        {/* <PureComp />
+        <ParentComp /> */}
+        <MemoParentComp />
 
 
       </div>
