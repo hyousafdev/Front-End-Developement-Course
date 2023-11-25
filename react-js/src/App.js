@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import Greet from './Components/functionalComponents';
 import ClassComponent from './Components/classComponent';
 import HelloJSX from './Components/helloJSX';
+import Props from './Components/Props';
 
 class App extends Component {
    render() {
@@ -12,7 +13,16 @@ class App extends Component {
 
       {/* <Greet /> */}
       {/* <ClassComponent /> */}
-      <HelloJSX />
+      {/* <HelloJSX /> */}
+      <Props name='Smith' heroName='Batman'>
+        <p>This is the children props</p>
+        </Props>
+        <Props name='Sara' heroName='Wonder woman'>
+        <button>Action</button>
+        </Props>
+        <Props name='David' heroName='Superman'>
+        <p>This is the another children props</p>
+        </Props>
 
       </div>
     );
