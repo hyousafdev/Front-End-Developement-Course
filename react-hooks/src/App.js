@@ -1,25 +1,17 @@
-//import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import HookCounter from './HooksComponents/useEffectHook';
-import MouseContainer from './HooksComponents/useEffectHookCleanupContainer';
-import ClassCounterConditional from './HooksComponents/useEffectHookConditional';
-import IntervalClassCounter from './HooksComponents/useEffectHookIncorrectDependency';
-import HookMouseOnce from './HooksComponents/useEffectHookOnce';
-import DataFetching from './HooksComponents/useEffectHookDataFetching';
-import DataFetchingA from './HooksComponents/useEffectHookDataFetchingA';
-import DataFetchingB from './HooksComponents/useEffectHookDataFetchingB';
-
+import ChildComponentA from './HooksComponents/useContextHookA';
+//setup context for the consumer or child component in my case is ./HooksComponents/useContextHookA
+export const UserContext = React.createContext()
+export const ChannelContext = React.createContext()
 function App() {
   return (
     <div className="App">
-      {/* <HookCounter /> */}
-      {/* <ClassCounterConditional /> */}
-      {/* <HookMouseOnce /> */}
-      {/* <MouseContainer /> */}
-      {/* <IntervalClassCounter /> */}
-      {/* <DataFetching /> */}
-      {/* <DataFetchingA /> */}
-      <DataFetchingB />
+      <UserContext.Provider value = 'Hassan'>
+        <ChannelContext.Provider value = 'Codex'>
+        <ChildComponentA />
+        </ChannelContext.Provider>
+      </UserContext.Provider>
     </div>
   );
 }
