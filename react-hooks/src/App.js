@@ -6,7 +6,7 @@ import ClassCounterConditional from './HooksComponents/useEffectHookConditional'
 import IntervalClassCounter from './HooksComponents/useEffectHookIncorrectDependency';
 import HookMouseOnce from './HooksComponents/useEffectHookOnce';
 import DataFetching from './HooksComponents/useEffectHookDataFetching';
-//import DataFetchingA from './HooksComponents/useEffectHookDataFetchingA';
+import DataFetchingA from './HooksComponents/useEffectHookDataFetchingA';
 
 function App() {
   return (
@@ -16,8 +16,8 @@ function App() {
       {/* <HookMouseOnce /> */}
       {/* <MouseContainer /> */}
       {/* <IntervalClassCounter /> */}
-      <DataFetching />
-      {/* <DataFetchingA /> */}
+      {/* <DataFetching /> */}
+      <DataFetchingA />
     </div>
   );
 }
