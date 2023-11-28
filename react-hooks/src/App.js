@@ -3,9 +3,10 @@ import './App.css';
 import HookCounter from './HooksComponents/useEffectHook';
 import MouseContainer from './HooksComponents/useEffectHookCleanupContainer';
 import ClassCounterConditional from './HooksComponents/useEffectHookConditional';
-import DataFetching from './HooksComponents/useEffectHookDataFetching';
 import IntervalClassCounter from './HooksComponents/useEffectHookIncorrectDependency';
 import HookMouseOnce from './HooksComponents/useEffectHookOnce';
+import DataFetching from './HooksComponents/useEffectHookDataFetching';
+//import DataFetchingA from './HooksComponents/useEffectHookDataFetchingA';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       {/* <MouseContainer /> */}
       {/* <IntervalClassCounter /> */}
       <DataFetching />
+      {/* <DataFetchingA /> */}
     </div>
   );
 }
