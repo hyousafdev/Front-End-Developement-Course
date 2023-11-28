@@ -1,8 +1,9 @@
 //import logo from './logo.svg';
 import './App.css';
 import HookCounter from './HooksComponents/useEffectHook';
-import ClassMouse from './HooksComponents/useEffectHookCleanup';
 import ClassCounterConditional from './HooksComponents/useEffectHookConditional';
+import HookMouseOnce from './HooksComponents/useEffectHookOnce';
+
 
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
     <div className="App">
       {/* <HookCounter /> */}
       {/* <ClassCounterConditional /> */}
-      <ClassMouse />
+      <HookMouseOnce />
     </div>
   );
 }
