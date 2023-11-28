@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import MemoCounter from './HooksComponents/useMemoHook';
+import FocusInput from './HooksComponents/FocusInput';
 
 function App() {
   return (
     <div className="App">
-      <MemoCounter />
+      <FocusInput />
     </div>
   );
 }
