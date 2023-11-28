@@ -3,9 +3,8 @@ import './App.css';
 import HookCounter from './HooksComponents/useEffectHook';
 import MouseContainer from './HooksComponents/useEffectHookCleanupContainer';
 import ClassCounterConditional from './HooksComponents/useEffectHookConditional';
+import IntervalClassCounter from './HooksComponents/useEffectHookIncorrectDependency';
 import HookMouseOnce from './HooksComponents/useEffectHookOnce';
-
-
 
 function App() {
   return (
@@ -13,7 +12,8 @@ function App() {
       {/* <HookCounter /> */}
       {/* <ClassCounterConditional /> */}
       {/* <HookMouseOnce /> */}
-      <MouseContainer />
+      {/* <MouseContainer /> */}
+      <IntervalClassCounter />
     </div>
   );
 }
