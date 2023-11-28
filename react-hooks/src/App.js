@@ -1,11 +1,14 @@
 import React from 'react';
 import './App.css';
-import FocusInput from './HooksComponents/FocusInput';
+import ClassTimer from './HooksComponents/ClassTimer';
+import HookTimer from './HooksComponents/HookTimer';
+
 
 function App() {
   return (
     <div className="App">
-      <FocusInput />
+      <ClassTimer />
+      <HookTimer />
     </div>
   );
 }
