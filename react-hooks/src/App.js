@@ -1,19 +1,10 @@
 import React from 'react';
 import './App.css';
-import ChildComponentA from './HooksComponents/useContextHookA';
-import ChildComponentD from './HooksComponents/useContextHookD';
-//setup context for the consumer or child component in my case is ./HooksComponents/useContextHookA
-export const UserContext = React.createContext()
-export const ChannelContext = React.createContext()
+import ReducerCounter from './HooksComponents/useReducerHookSimpleSateAndAction';
 function App() {
   return (
     <div className="App">
-      <UserContext.Provider value = 'Hassan'>
-        <ChannelContext.Provider value = 'Coding'>
-        <ChildComponentA />
-        <ChildComponentD />
-        </ChannelContext.Provider>
-      </UserContext.Provider>
+      <ReducerCounter />
     </div>
   );
 }
