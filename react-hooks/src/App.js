@@ -1,16 +1,13 @@
 import React from 'react';
 import './App.css';
-import DocTitleOne from './HooksComponents/DocTitleOne';
-import DocTitleTwo from './HooksComponents/DocTitleTwo';
-
-
+import CustomCounterOne from './HooksComponents/CustomCounterOne';
+import CustomCounterTwo from './HooksComponents/CustomCounterTwo';
 
 function App() {
   return (
     <div className="App">
-      {/* with these two functional component the document update at the same time */}
-      <DocTitleOne />
-      <DocTitleTwo />
+      <CustomCounterOne />
+      <CustomCounterTwo />
     </div>
   );
 }
