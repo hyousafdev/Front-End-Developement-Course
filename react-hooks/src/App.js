@@ -1,14 +1,16 @@
 import React from 'react';
 import './App.css';
-import ClassTimer from './HooksComponents/ClassTimer';
-import HookTimer from './HooksComponents/HookTimer';
+import DocTitleOne from './HooksComponents/DocTitleOne';
+import DocTitleTwo from './HooksComponents/DocTitleTwo';
+
 
 
 function App() {
   return (
     <div className="App">
-      <ClassTimer />
-      <HookTimer />
+      {/* with these two functional component the document update at the same time */}
+      <DocTitleOne />
+      <DocTitleTwo />
     </div>
   );
 }
