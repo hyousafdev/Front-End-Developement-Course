@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
-import DataFetchingComp from './HooksComponents/useReducerHookDataFetching';
+import ParentComponent from './HooksComponents/ParentComponent';
+
 function App() {
   return (
     <div className="App">
-      <DataFetchingComp />
+      <ParentComponent />
     </div>
   );
 }
