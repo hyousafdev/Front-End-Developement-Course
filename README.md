@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Awesome Project</title>
+  <title>My Beginner Level Pracrice</title>
   <style>
     body {
       font-family: 'Arial', sans-serif;
@@ -29,11 +29,6 @@
 </head>
 <body>
   <div id="app"></div>
-
-  <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
-  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
-  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-  <script type="text/babel">
     const App = () => (
       <div>
         <h1>This is My Beginner Level Practice</h1>
