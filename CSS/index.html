@@ -3,18 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Flex Box Properties</title>
-    <link rel="stylesheet" href="FlexBox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="Dropdowns.css">
+    <title>CSS Dropdowns</title>
 </head>
 <body>
-    <h1>CSS Flex Box Properties</h1>
-    <div class="container">
-        <div class="items item-1">item 1</div>
-        <div class="items item-2">item 2</div>
-        <div class="items item-3">item 3</div>
-        <div class="items item-4">item 4</div>
-        <div class="items item-5">item 5</div>
-        <div class="items item-6">item 6</div>
-    </div>
+    <nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li class="dropdown">
+          <a href="#" class="drop-menu">News and Stories <span class="fa fa-caret-down"></span></a>
+          <div class="dropdown-content">
+            <a href="#">Accessibility Blog</a>
+            <a href="#">AI Blog</a>
+            <a href="#">Education Stories</a>
+            <a href="#">Feature Stories</a>
+            <a href="#">Innovation Stories</a>
+            <a href="#">Customer Stories</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
 </body>
 </html>
