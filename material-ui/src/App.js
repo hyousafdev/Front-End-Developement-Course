@@ -1,56 +1,31 @@
-import { Button, styled, Typography } from "@mui/material";
-import { Add, Settings } from "@mui/icons-material";
-
-//How we can used emotion or styled component
-const BlueButton = styled(Button)(({theme}) => ({
-  //backgroundColor: "blue",
-  background: theme.palette.otherColor.main,
-  color: "#000",
-  margin: 5,
-  "&:hover": {
-    backgroundColor: "lightblue"
-  },
-  "&:disabled": {
-    backgroungColor: "gray",
-    color: "white"
-  }
-}))
+import Sidebar from "./components/Sidebar";
+import Feed from "./components/Feed";
+import Rightbar from "./components/Rightbar";
+import { Box, createTheme, Stack, ThemeProvider } from "@mui/material";
+import Navbar from "./components/Navbar";
+import Add from "./components/Add";
+import { useState } from "react";
 
 function App() {
+  const [mode, setMode] = useState("light");
+
+  const darkTheme = createTheme({
+    palette: {
+      mode: mode,
+    },
+  });
   return (
-    <div className="App">
-      <h1>Hello World</h1>
-      <h2>I just start learning Material-UI</h2>
-
-      <Button variant="text">Text</Button>
-      <Button variant="contained" color="otherColor" startIcon={<Settings />}>
-        Settings{" "}
-      </Button>
-      <Button variant="contained" color="success" startIcon={<Add />}>
-        Add new Post
-      </Button>
-
-      <Typography variant="h1" component="p">
-        It uses h1 styles but it's a p tag
-      </Typography>
-      <BlueButton>My Button</BlueButton>
-      <BlueButton>Another Button</BlueButton>
-      {/* Comment t the below code duw to using above emotion ot styled component */}
-      {/* <Button variant="contained" disabled sx={{ 
-        backgroundColor: "skyblue",
-        color: "#888",
-        margin: 5,
-        "&:hover": {
-          backgroundColor: "blue"
-        },
-        "&:disabled": {
-          backgroungColor: "gray",
-          color: "white"
-        }
-        }}>
-        This is unique Button
-      </Button> */}
-    </div>
+    <ThemeProvider theme={darkTheme}>
+      <Box bgcolor={"background.default"} color={"text.primary"}>
+        <Navbar />
+        <Stack direction="row" spacing={2} justifyContent="space-between">
+        <Sidebar setMode={setMode} mode={mode}/>
+          <Feed />
+          <Rightbar />
+        </Stack>
+        <Add />
+      </Box>
+    </ThemeProvider>
   );
 }
 
