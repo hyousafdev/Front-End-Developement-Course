@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    /* Project Structure */
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    /* Module + Target (Node friendly) */
+    "module": "commonjs",
+    "target": "ES2020",
+
+    /* Strictness */
+    "strict": true,
+
+    /* Interop */
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Performance */
+    "skipLibCheck": true,
+
+    /* Debugging */
+    "sourceMap": false
+  }
+}
