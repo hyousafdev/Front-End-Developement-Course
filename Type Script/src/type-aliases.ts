@@ -1,4 +1,4 @@
-// 🔥 TYPE ALIASES IN TYPESCRIPT (DETAILED PRACTICE FILE)
+/* // 🔥 TYPE ALIASES IN TYPESCRIPT (DETAILED PRACTICE FILE)
 
 // 👉 Type Alias = custom name for a type (like shortcut / reusable type)
 
@@ -193,4 +193,4 @@ interface Bike {
 // A: type is more flexible, interface is extendable for objects
 
 
-// 🚀 END OF FILE
+// 🚀 END OF FILE */
